@@ -77,3 +77,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Menu principal e controle da execução do TaskTracker.
