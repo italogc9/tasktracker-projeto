@@ -2,6 +2,7 @@
 tarefas = []
 
 
+
 def cadastrar_tarefa():
     print("\n--- Cadastrar tarefa ---")
 
@@ -21,14 +22,11 @@ def cadastrar_tarefa():
             break
         print("Erro: escolha Alta, Média ou Baixa.")
 
-   
-while True:
-    data_limite = input("Data limite (DD/MM/AAAA): ").strip()
-
-    if data_limite:
-        break
-
-    print("Erro: a data limite é obrigatória.")
+    while True:
+        data_limite = input("Data limite (DD/MM/AAAA): ").strip()
+        if data_limite:
+            break
+        print("Erro: a data limite é obrigatória.")
 
     tarefa = {
         "titulo": titulo,
@@ -40,6 +38,7 @@ while True:
 
     tarefas.append(tarefa)
     print("\nTarefa cadastrada com sucesso!")
+
 
 
 def visualizar_tarefas():
