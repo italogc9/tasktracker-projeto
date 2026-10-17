@@ -21,11 +21,14 @@ def cadastrar_tarefa():
             break
         print("Erro: escolha Alta, Média ou Baixa.")
 
-    while True:
-        data_limite = input("Data limite: ").strip()
-        if data_limite:
-            break
-        print("Erro: a data limite é obrigatória.")
+   
+while True:
+    data_limite = input("Data limite (DD/MM/AAAA): ").strip()
+
+    if data_limite:
+        break
+
+    print("Erro: a data limite é obrigatória.")
 
     tarefa = {
         "titulo": titulo,
